@@ -6,11 +6,12 @@
 <title>Order — Cakes By Isabelle</title>
 <link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<?php require_once 'include/nav.php'; ?>
+<?php require_once __DIR__ . '/include/nav.php'; ?>
 
 <section class="section" style="padding-bottom:0">
   <div class="container">
@@ -149,7 +150,7 @@
   </div>
 </section>
 
-<?php require_once 'include/footer.php'; ?>
+<?php require_once __DIR__ . '/include/footer.php'; ?>
 
 <script src="js/main.js"></script>
 </body>

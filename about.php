@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — Rosewood Bakery</title>
+<title>About — Cakes By Isabelle</title>
 <link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<?php require_once 'include/nav.php'; ?>
+<?php require_once __DIR__ . '/include/nav.php'; ?>
 
 <section class="section">
   <div class="container">
@@ -20,14 +21,14 @@
         <h1>Baked with patience, finished with care.</h1>
         <hr class="divider">
         <p>Cakes by Isabelle started at a kitchen table in 2016 - a few birthday cakes for friends that turned into something much bigger. Every cake we make is still handmade from scratch, with the same attention to detail as the very first one.</p>
-        <p>We use locally sourced butter and eggs where we can, Belgian chocolate for anything chocolate, and real vanilla - never extract. The results speak for themselves.</p>
+        <p>We use locally sourced butter and eggs where we can, Belgian chocolate for anything chocolate, and real vanilla - never essence. The results speak for themselves.</p>
         <p>Based in Tralee, we deliver across Kerry. For collection orders or further afield, get in touch and we'll figure something out.</p>
         <div class="btn-row" style="justify-content:flex-start; margin-top:1.5rem;">
-          <a class="btn btn--primary" href="order.html">Order a cake</a>
-          <a class="btn btn--outline-dark" href="contact.html">Say hello</a>
+          <a class="btn btn--primary" href="order.php">Order a cake</a>
+          <a class="btn btn--outline-dark" href="contact.php">Say hello</a>
         </div>
       </div>
-      <div class="about-img"><img id = "about-image" src="images/cakes/1.jpg" alt="About Cakes by Isabelle"></div>
+      <div class="about-img"><img id="about-image" src="images/cakes/1.jpg" alt="A selection of cakes made by Cakes by Isabelle"></div>
     </div>
   </div>
 </section>
@@ -54,7 +55,7 @@
   </div>
 </section>
 
-<?php require_once 'include/footer.php'; ?>
+<?php require_once __DIR__ . '/include/footer.php'; ?>
 
 <script src="js/main.js"></script>
 </body>

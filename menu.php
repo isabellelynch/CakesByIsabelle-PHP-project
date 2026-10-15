@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu — Rosewood Bakery</title>
+<title>Menu — Cakes By Isabelle</title>
 <link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<?php require_once 'include/nav.php'; ?>
+<?php require_once __DIR__ . '/include/nav.php'; ?>
 
 <section class="section">
   <div class="container">
@@ -23,7 +24,7 @@
       <button class="active" data-filter="all">All cakes</button>
       <button data-filter="classic">Classic</button>
       <button data-filter="chocolate">Chocolate</button>
-      <button data-filter="best">BestSeller</button>
+      <button data-filter="best">Bestseller</button>
     </div>
   </div>
 </section>
@@ -60,7 +61,7 @@
           <div class="cake-card-body">
             <h3>Red Velvet</h3>
             <p>Vibrant red sponge with cream cheese frosting.</p>
-            <div class="cake-card-tags"><span class="tag">BestSeller</span></div>
+            <div class="cake-card-tags"><span class="tag">Bestseller</span></div>
           </div>
         </div>
       </div>
@@ -71,7 +72,7 @@
           <div class="cake-card-body">
             <h3>Biscoff</h3>
             <p>White chocolate sponge with Biscoff buttercream.</p>
-            <div class="cake-card-tags"><span class="tag">BestSeller</span></div>
+            <div class="cake-card-tags"><span class="tag">Bestseller</span></div>
           </div>
         </div>
       </div>
@@ -82,7 +83,7 @@
           <div class="cake-card-body">
             <h3>Kinder Bueno</h3>
             <p>Milk chocolate sponge with a white hazelnut cream filling.</p>
-            <div class="cake-card-tags"><span class="tag">BestSeller</span><span class="tag">Chocolate</span></div>
+            <div class="cake-card-tags"><span class="tag">Bestseller</span><span class="tag">Chocolate</span></div>
           </div>
         </div>
       </div>
@@ -106,11 +107,11 @@
   <div class="container">
     <h2>Don't see what you're after?</h2>
     <p>We take fully custom orders — tell us your idea and we'll make it happen.</p>
-    <a class="btn btn--primary" href="contact.html">Get in touch</a>
+    <a class="btn btn--primary" href="contact.php">Get in touch</a>
   </div>
 </section>
 
-<?php require_once 'include/footer.php'; ?>
+<?php require_once __DIR__ . '/include/footer.php'; ?>
 
 <script src="js/main.js"></script>
 </body>

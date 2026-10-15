@@ -6,18 +6,19 @@
 <title>Cakes By Isabelle - Handmade Cakes</title>
 <link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php require_once 'include/nav.php'; ?>
+<?php require_once __DIR__ . '/include/nav.php'; ?>
 <!-- Hero -->
 <section class="hero">
   <div>
     <h1>Cakes made with <em>real love.</em></h1>
     <p>Handmade to order - birthdays, weddings and every occasion in between.</p>
     <div class="btn-row">
-      <a class="btn btn--primary" href="order.html">Order your cake</a>
-      <a class="btn btn--outline" href="menu.html">Browse the menu</a>
+      <a class="btn btn--primary" href="order.php">Order your cake</a>
+      <a class="btn btn--outline" href="menu.php">Browse the menu</a>
     </div>
   </div>
 </section>
@@ -33,7 +34,7 @@
 
       <div class="cake-card-wrap">
         <div class="cake-card">
-          <img src="images/red.webp" alt="Description of image" class="cake-card-img">
+          <img src="images/red.webp" alt="Red velvet cake with cream cheese frosting" class="cake-card-img">
           <div class="cake-card-body">
             <h3>Red Velvet</h3>
             <p>Vibrant red cake with a rich, moist texture and a hint of cocoa. Filled with cream cheese frosting.</p>
@@ -44,7 +45,7 @@
 
       <div class="cake-card-wrap">
         <div class="cake-card">
-          <img src="images/vanilla.jpg" alt="Description of image" class="cake-card-img">
+          <img src="images/vanilla.jpg" alt="Classic Victoria sponge cake" class="cake-card-img">
           <div class="cake-card-body">
             <h3>Classic Victoria Sponge</h3>
             <p>Light and airy vanilla layers, filled with a decadent vanilla buttercream. A timeless crowd-pleaser.</p>
@@ -58,7 +59,7 @@
 
       <div class="cake-card-wrap">
         <div class="cake-card">
-          <img src="images/choc.webp" alt="Description of image" class="cake-card-img">
+          <img src="images/choc.webp" alt="Dark chocolate ganache cake" class="cake-card-img">
           <div class="cake-card-body">
             <h3>Dark Chocolate Ganache</h3>
             <p>Rich, moist Belgian chocolate cake, oozing full of decadent, silky, indulgent chocolate ganache.</p>
@@ -72,7 +73,7 @@
 
 
     <div class="btn-row" style="margin-top:2.5rem">
-      <a class="btn btn--outline-dark" href="menu.html">See full menu →</a>
+      <a class="btn btn--outline-dark" href="menu.php">See full menu →</a>
     </div>
   </div>
 </section>
@@ -133,12 +134,12 @@
 <section class="section section--tinted" style="text-align:center">
   <div class="container">
     <h2>Ready to order?</h2>
-    <p style="max-width:42ch; margin: 0 auto 2rem;">Every cake is made to order. Place yours with at least 5 days' notice — or 2 weeks for wedding cakes.</p>
-    <a class="btn btn--primary" href="order.html">Start your order</a>
+    <p style="max-width:42ch; margin: 0 auto 2rem;">Every cake is made to order. Place yours with at least 3 days' notice — or 1-2 weeks for wedding and tiered cakes.</p>
+    <a class="btn btn--primary" href="order.php">Start your order</a>
   </div>
 </section>
 
-<?php require_once 'include/footer.php'; ?>
+<?php require_once __DIR__ . '/include/footer.php'; ?>
 
 <script src="js/main.js"></script>
 </body>
